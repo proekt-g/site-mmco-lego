@@ -1,0 +1,13 @@
+$default-font: "Inter";
+$content-width: 1128px;
+$heightHeader: 96px;
+$heightFooter: 328px;
+$minHeightMain: calc(100vh - (#{$heightHeader} + #{$heightFooter}));
+$mainColor: #000;
+$mainWeight: 400;
+$mainSize: 18px;
+:root {
+    --site-color: #f5f6f7;
+    --submain-color: #0090f5;
+    --bg-color: #ffd500;
+}

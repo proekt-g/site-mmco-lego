@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <aside class="modal-overlay">
+      <div class="modal">
+        <div class="modal__close">
+          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <path d="M1 19l18-18m-18 0l18 18" stroke="#DFDFDE" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="modal__content">
+          <div class="modal__content-inner">
+            <video class="modal__content-video" autoplay controls>
+              <source src="assets/images/videoplayback.mp4" type="video/mp4;" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__logos">
+          <picture class="header__logo">
+            <a class="logo-link" href="#"></a>
+            <source media="(max-width: 900px)" srcset="assets/images/logo-tab.svg" />
+            <source media="(max-width: 500px)" srcset="assets/images/logo-mobail.svg" />
+            <img class="header__logo-img" src="assets/images/logo.svg" alt="" loading="lazy" />
+          </picture>
+          <picture class="logo-lego">
+            <source media="(max-width: 900px)" srcset="assets/images/logo-lego-tab.svg" />
+            <source media="(max-width: 500px)" srcset="assets/images/logo-lego-mobail.svg" />
+            <img class="logo-lego-img" src="assets/images/logo-lego.svg" alt="" loading="lazy" />
+          </picture>
+        </div>
+        <nav class="menu">
+          <aside class="menu__burger">
+            <span class="menu__burger-line menu__burger-line--first"></span>
+            <span class="menu__burger-line menu__burger-line--middle"></span>
+            <span class="menu__burger-line menu__burger-line--last"></span>
+          </aside>
+          <div class="menu__desktop">
+            <a class="menu__desktop-element" href="#">Сайт ММСО</a>
+            <a class="menu__desktop-element" href="#info">Что будет</a>
+            <a class="menu__desktop-element" href="#helpful">Для кого</a>
+            <a class="menu__desktop-element" href="#master">Мастер-классы</a>
+            <a class="menu__desktop-element" href="#organizers">Организаторы</a>
+          </div>
+        </nav>
+        <div class="header__buttons">
+          <a class="header__button button button--blue" href="#">Регистрация</a>
+          <a class="header__in button button--transporent" href="#">Войти</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="about">
+        <div class="about__inner container">
+          <div class="about__info">
+            <div class="about__title">Виртуальные дни программирования LEGO® Education!</div>
+            <div class="about__subtitle subtitle">Серия онлайн-вебинаров, посвященных программированию, информатике и робототехнике.</div>
+            <a class="button button--yellow" href="#">Регистрация</a>
+          </div>
+          <div class="about__video">
+            <picture class="about__placeholder">
+              <source media="(max-width: 700px)" srcset="assets/images/placeholder.jpg" />
+              <img class="about__placeholder-img" src="assets/images/placeholder.jpg" alt="" loading="lazy" />
+              <div class="about__video-play">
+                <svg width="20" height="24" viewBox="0 0 20 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path
+                    d="M19.5 11.134c.667.385.667 1.347 0 1.732l-18 10.392c-.667.385-1.5-.096-1.5-.866v-20.785c0-.77.833-1.251 1.5-.866l18 10.392z"
+                    fill="#0090F5"
+                  />
+                </svg>
+              </div>
+              <div class="about__date">
+                <div class="about__day">19-20</div>
+                <div class="about__month">октября</div>
+              </div>
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="info" id="info">
+        <div class="info__container container">
+          <div class="info__title title title--white">Что будет</div>
+          <div class="info__subtitle subtitle">
+            Онлайн-вебинары по вопросам смешанного обучения, сочетающего традиционную очную и дистанционную формы.
+          </div>
+          <div class="info__subtitle subtitle">
+            Организации соревновательной деятельности в школе и STEAM-обучению, которое позволяет изучать информатику, физику и технологию в рамках
+            увлекательной проектной деятельности.
+          </div>
+          <div class="info__media">
+            <picture class="info__picture">
+              <source media="(max-width: 700px)" srcset="assets/images/info-mobail.jpg" />
+              <img class="info__picture-img" src="assets/images/info.jpg" alt="" loading="lazy" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="interesting">
+        <div class="container">
+          <div class="interesting__title title">Мы подготовили много интересного</div>
+          <div class="interesting__block">
+            <div class="interesting__box">
+              <div class="interesting__picture">
+                <svg xmlns="http://www.w3.org/2000/svg" width="62" height="68" viewBox="0 0 62 68">
+                  <path
+                    fill="#0065b3"
+                    d="M30.998 36.798a2.808 2.808 0 0 0 2.818-2.799 2.808 2.808 0 0 0-2.818-2.799 2.808 2.808 0 0 0-2.818 2.799 2.808 2.808 0 0 0 2.818 2.799zM31.003 67.586c-2.756 0-6.76-1.413-10.195-8.15a2.794 2.794 0 0 1 1.24-3.765 2.83 2.83 0 0 1 3.787 1.231c1.623 3.186 3.556 5.086 5.167 5.086 3.909 0 9.581-10.905 9.581-27.99s-5.672-27.99-9.58-27.99c-2.54 0-6.155 4.78-8.152 13.917a2.816 2.816 0 0 1-3.35 2.141 2.797 2.797 0 0 1-2.156-3.328c2.507-11.476 7.613-18.328 13.658-18.328 9.884 0 15.216 17.306 15.216 33.588s-5.332 33.588-15.217 33.588z"
+                  />
+                  <path
+                    fill="#ffc331"
+                    d="M12.354 55.512c-4.847 0-8.713-1.405-10.64-4.717-4.94-8.503 7.481-21.742 21.677-29.885a77.03 77.03 0 0 1 9.744-4.73c1.443-.574 3.086.12 3.663 1.556a2.793 2.793 0 0 1-1.567 3.642 71.212 71.212 0 0 0-9.025 4.383c-14.895 8.539-21.564 18.877-19.609 22.235 1.95 3.36 14.298 2.79 29.192-5.754 14.895-8.543 21.565-18.877 19.612-22.236-.789-1.355-3.35-2.082-6.802-1.914-1.541.05-2.874-1.123-2.945-2.67a2.805 2.805 0 0 1 2.686-2.923c7.484-.341 10.586 2.377 11.944 4.708 4.94 8.504-7.478 21.743-21.674 29.885-8.667 4.968-18.662 8.42-26.256 8.42z"
+                  />
+                  <path
+                    fill="#ed1c24"
+                    d="M22.691 46.212c-.507 0-1.02-.137-1.482-.42-13.216-8.137-24.154-20.567-19.497-28.586 1.316-2.265 4.37-4.927 11.455-4.725a2.81 2.81 0 0 1 2.741 2.874c-.042 1.543-1.42 2.73-2.896 2.721-3.3-.106-5.65.61-6.416 1.929-1.787 3.07 3.449 12.326 17.583 21.031a2.79 2.79 0 0 1 .91 3.855 2.83 2.83 0 0 1-2.398 1.32zm25.47 9.278c-1.556-.08-2.75-1.399-2.668-2.941.081-1.545 1.428-2.738 2.961-2.651 3.581.19 6.151-.526 6.949-1.906.854-1.464.05-4.243-2.145-7.426a2.787 2.787 0 0 1 .736-3.89 2.832 2.832 0 0 1 3.917.73c4.553 6.606 3.804 10.925 2.375 13.385-1.285 2.208-4.182 4.736-10.71 4.736z"
+                  />
+                </svg>
+              </div>
+              <div class="interesting__text">Новые учебные курсы по физике</div>
+            </div>
+            <div class="interesting__box">
+              <div class="interesting__picture">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="65" viewBox="0 0 64 65">
+                  <path
+                    fill="#ffc331"
+                    d="M62.721 40.375c-1.572 4.652-3.225 7.753-7.697 7.753h-23.04v1.932h15.368v5.822c0 4.407-3.822 6.638-7.697 7.753-5.828 1.687-10.517 1.415-15.368 0-4.066-1.197-7.698-3.618-7.698-7.753v-14.555c0-4.19 3.496-7.754 7.698-7.754h15.313c5.123 0 9.622-4.461 9.622-9.712v-6.801h5.773c4.5 0 6.587 3.319 7.698 7.753 1.545 6.122 1.599 10.72.027 15.562zm-24.99 16.459c0 1.605 1.274 2.91 2.873 2.91 1.6 0 2.873-1.305 2.873-2.91 0-1.605-1.274-2.911-2.873-2.911-1.599 0-2.873 1.278-2.873 2.91z"
+                  />
+                  <path
+                    fill="#0065b3"
+                    d="M47.349 9.277v14.581c0 4.244-3.416 7.754-7.698 7.754h-15.368c-5.231 0-9.622 4.462-9.622 9.494v6.992h-5.285c-4.472 0-7.074-3.237-8.159-7.753-1.463-6.094-1.409-9.712 0-15.534 1.22-5.088 5.123-7.754 9.568-7.781h21.141v-1.932h-15.368v-5.821c0-4.408 1.193-6.802 7.698-7.944 4.418-.79 10.083-.87 15.368 0 4.174.68 7.697 3.808 7.725 7.944zm-21.169-.953c0-1.605-1.274-2.91-2.873-2.91-1.572 0-2.873 1.305-2.873 2.91 0 1.605 1.274 2.911 2.873 2.911 1.6 0 2.873-1.306 2.873-2.91z"
+                  />
+                </svg>
+              </div>
+              <div class="interesting__text">Поддержка языка программирования Python</div>
+            </div>
+            <div class="interesting__box">
+              <div class="interesting__picture">
+                <svg xmlns="http://www.w3.org/2000/svg" width="59" height="73" viewBox="0 0 59 73">
+                  <path
+                    fill="#231f20"
+                    d="M.19 61.574h2.88v8.582h5.095v2.48h-7.975zm8.449 0h8.695v2.289h-5.874v1.945h5.342v2.232h-5.342v2.116h6.005v1.295l-.416 1.108h.416v.077h-8.825zm8.827 10.985v-1.108l3.713-9.877h2.88l4.073 10.985h-2.994l-.663-1.983h-3.845l-.663 1.983zm3.884-4.1h2.462l-1.193-3.871h-.057zm16.803 4.1h-1.857l-.17-1.201c-.777 1.087-2.046 1.45-3.05 1.45-3.296 0-5.456-2.537-5.456-5.741 0-3.204 2.16-5.74 5.456-5.74 2.273 0 4.679 1.2 4.982 3.985h-2.88c-.113-.972-1.022-1.506-2.16-1.506-1.856 0-2.519 1.62-2.519 3.26 0 1.622.72 3.262 2.52 3.262 1.383 0 2.33-.667 2.52-1.697h-2.009v-2.117h4.623zm10.38-4.52c0 3.205-1.44 4.768-4.735 4.768-3.297 0-4.736-1.564-4.736-4.768v-6.465h2.88v6.637c0 1.392.53 2.174 1.912 2.174 1.383 0 1.914-.724 1.914-2.174v-6.637h2.88v6.466zm9.643-6.465v2.289h-5.873v1.945h5.342v2.232h-5.342v2.116h6.005v2.48h-8.884v-11.062zm-49.594-14.054h2.88v8.563h5.095v2.479h-7.975zm8.468 0h8.695v2.288h-5.892v1.926h5.342v2.232h-5.342v2.117h6.005v2.479h-8.808zm17.806 10.985l-.17-1.202c-.777 1.087-2.046 1.45-3.05 1.45-3.296 0-5.456-2.537-5.456-5.74 0-3.205 2.16-5.741 5.456-5.741 2.273 0 4.679 1.201 4.982 3.986h-2.898c-.114-.973-1.023-1.507-2.16-1.507-1.856 0-2.52 1.621-2.52 3.261 0 1.621.72 3.261 2.52 3.261 1.383 0 2.33-.667 2.52-1.697h-1.97v-2.117h4.622v6.046zm7.73-11.233c3.41 0 5.398 2.536 5.398 5.74s-1.913 5.74-5.399 5.74c-3.41 0-5.399-2.536-5.399-5.74s1.933-5.74 5.4-5.74zm0 9.001c1.856 0 2.519-1.62 2.519-3.26 0-1.622-.72-3.262-2.52-3.262-1.856 0-2.52 1.621-2.52 3.261-.056 1.621.664 3.261 2.52 3.261zm6.307-8.753c.607 0 1.08.476 1.08 1.087 0 .61-.473 1.087-1.08 1.087a1.07 1.07 0 0 1-1.08-1.087c-.075-.61.417-1.087 1.08-1.087zm0 2.097c.53 0 .966-.42.966-.972a.961.961 0 0 0-.966-.973c-.53 0-.966.42-.966.973 0 .496.417.972.966.972zm-.265-1.563h.17c.36 0 .531.114.531.42 0 .17-.057.247-.246.304l.303.42h-.417c-.057-.172-.113-.172-.246-.362v.362h-.36v-1.144h.265zm.19.553c.113 0 .17-.058.17-.115s-.057-.114-.114-.114h-.056zm-41.846-16.421h8.695l-.853 3.375h-4.186l-.417 1.754h4.376l-.72 3.128h-4.319l-1.023 4.463h-4.49zm9.888 0h4.49l-2.937 12.72h-4.489zm5.702.056l.303-.057c1.44-.171 3.24-.305 4.263-.305 1.685 0 2.936.172 3.902.61 1.25.534 1.97 1.621 1.97 3.014a4.964 4.964 0 0 1-1.137 3.146c-.663.725-1.193 1.087-2.405 1.45l-.304.114c.114.115.17.115.247.172.36.42 1.383 2.48 2.273 4.52h-4.982c-.663-1.812-.834-2.289-1.686-4.348l-1.023 4.348h-4.376zm3.296 6.027c1.44 0 2.463-.84 2.463-2.06 0-.667-.474-.972-1.383-.972-.246 0-.417 0-.72.057l-.663 2.956.303.019zm17.75-6.084h10.912l-.777 3.68h-3.24l-2.159 9.04h-4.49l2.16-9.04h-3.542zm6.839 10.432c.606 0 1.08.477 1.08 1.087s-.474 1.087-1.08 1.087c-.606 0-1.08-.476-1.08-1.087 0-.61.474-1.087 1.08-1.087zm0 2.06c.53 0 .966-.42.966-.973a.961.961 0 0 0-.966-.972c-.53 0-.966.42-.966.972 0 .553.473.973.966.973zm-.247-1.507h.171c.36 0 .53.115.53.42 0 .171-.056.248-.246.305l.303.42h-.417c-.056-.172-.113-.172-.246-.363v.363h-.36v-1.145h.265zm.247.534c.113 0 .17-.057.17-.114s-.056-.115-.113-.115h-.057zm-17.333-2.67c1.383.534 2.462.782 3.239.782.91 0 1.44-.305 1.44-.839 0-.362-.17-.496-1.25-.973-2.293-1.087-3.183-2.04-3.183-3.432 0-2.67 2.822-4.654 6.478-4.654.967 0 1.914.115 2.937.42l-.89 3.433c-1.384-.44-2.028-.61-2.634-.61-.776 0-1.383.304-1.383.781 0 .172.114.305.417.477l.89.42c1.08.534 1.63.839 2.16 1.258a2.802 2.802 0 0 1 1.023 2.174c0 1.278-.853 2.728-2.103 3.624-1.136.84-2.52 1.259-4.262 1.259-1.326 0-2.709-.248-3.96-.61z"
+                  />
+                  <path
+                    fill="#99999a"
+                    d="M28.442 8.847c.8 0 1.578.073 2.32.209l1.766-1.84a12.542 12.542 0 0 0-4.086-.667c-2.491 0-4.753.694-6.43 1.825l1.538 1.458c1.423-.624 3.097-.985 4.892-.985z"
+                  />
+                  <path
+                    fill="#fff"
+                    d="M28.442 6.549c1.464 0 2.85.24 4.086.666l1.92-1.997c-1.792-.706-3.835-1.108-6.006-1.108-3.237 0-6.19.89-8.444 2.356l2.014 1.908c1.677-1.13 3.939-1.825 6.43-1.825z"
+                  />
+                  <path
+                    fill="#99999a"
+                    d="M19.223 14.369c.161-.66.46-1.285.871-1.865l-.774-.78a4.786 4.786 0 0 0-.097 2.645zM13.51 18.694l-.326 1.682 3.231-1.39c-.205-.429-.245-.988-.363-1.443zM11.235.388l-4.675 25.604 2.21.18 4.63-25.977z"
+                  />
+                  <path
+                    fill="#ed1c24"
+                    d="M26.959 15.121v-2.07l-3.396-3.22-1.54-1.457-2.012-1.908-6.618-6.271-4.631 25.975 9.8-4.307c-.976-.862-1.668-1.78-2.182-2.864l-3.19 1.37.32-1.675 2.068-10.774.172-.903 1.707 1.718 2.196 2.212.943.95 3.876 3.339-3.762 1.724c.976.977 2.135 1.837 3.694 2.322l4.695-2.108z"
+                  />
+                  <path
+                    fill="#99999a"
+                    d="M37.66 14.369c.09-.374.141-.757.141-1.149 0-1.157-.423-2.248-1.151-3.196l-1.114 1.154c1.07.891 1.83 1.987 2.123 3.19zM39.755 25.328l-2.642-2.538c-.423.289-.874.556-1.346.802l3.988 3.829 12.298-12.81-.013-2.074zM30.793 16.724l-2.176-2.088-1.664-1.59-.007 2.075 2.341 2.249 2.237 2.148c.569-.14 1.112-.32 1.624-.533zM39.344 5.14l-1.75 1.822-1.932 2.013-1.316 1.37-2.495 2.598 1.045 1.004 2.654-2.765 1.11-1.155 2.033-2.118.651-.677 6.763 6.483 1.046-1.086z"
+                  />
+                  <path
+                    fill="#fff"
+                    d="M38.694 7.91l-2.034 2.117c.728.948 1.14 2.036 1.14 3.193 0 .392-.05.776-.14 1.148-.238.974-.772 1.876-1.532 2.655-.779.8-1.796 1.471-2.98 1.963a11.45 11.45 0 0 1-1.624.533c-.964.238-2.002.372-3.082.372-1.331 0-2.595-.2-3.742-.556-1.56-.486-2.9-1.267-3.877-2.243a6.53 6.53 0 0 1-.92-1.143 5.35 5.35 0 0 1-.68-1.581 4.805 4.805 0 0 1 .098-2.645l-2.336-2.364c-.855 1.268-1.337 2.697-1.337 4.21 0 .39.036.774.097 1.15a7.55 7.55 0 0 0 .955 2.603c.24.41.517.804.83 1.181.822.991 1.88 1.861 3.123 2.567 2.156 1.227 4.856 1.96 7.789 1.96 2.052 0 3.988-.359 5.706-.993a14.315 14.315 0 0 0 1.5-.652 12.161 12.161 0 0 0 2.91-2.028c1.377-1.314 2.296-2.903 2.58-4.638.062-.376.096-.76.096-1.15 0-2.122-.944-4.082-2.54-5.66z"
+                  />
+                  <path
+                    fill="#0065b3"
+                    d="M30.782 16.74l2.348 2.254c1.181-.493 2.207-1.157 2.987-1.955l-3.218-3.09-1.045-1.004 2.481-2.584 1.316-1.37 1.931-2.013 1.752-1.823 7.79 7.48-1.046 1.088-6.382 6.647c-.673.92-1.544 1.738-2.575 2.444l2.622 2.53 12.3-12.81-12.811-12.296-4.797 4.996-1.92 2-1.766 1.84-3.797 3.973z"
+                  />
+                  <path
+                    fill="#99999a"
+                    d="M19.957 16.012l.068.113c.188.299.446.571.69.845l3.826-1.768-8.792-8.19-.24 1.267 6.899 6.831zM41.235 13.57c0 .389-.035.772-.096 1.148-.285 1.735-1.205 3.324-2.58 4.638a12.137 12.137 0 0 1-2.911 2.029c-.478.24-.978.46-1.5.652-1.717.634-3.654.992-5.706.992-2.933 0-5.633-.732-7.788-1.959-1.243-.705-2.303-1.575-3.124-2.567a8.812 8.812 0 0 1-.83-1.181 7.562 7.562 0 0 1-.955-2.604 7.074 7.074 0 0 1-.098-1.148l.016-.364-.004-.022c-.063.377-.012 2.295-.012 2.685 0 .616.083 1.22.235 1.802.12.457.283.9.486 1.33.514 1.081 1.285 2.075 2.26 2.937 2.349 2.071 5.873 3.39 9.814 3.39 2.734 0 5.266-.637 7.346-1.717.471-.245.921-.514 1.343-.801 1.03-.707 1.904-1.535 2.576-2.457.975-1.333 1.528-2.86 1.528-4.484 0-.342.03-1.965-.003-2.61l.003.31z"
+                  />
+                </svg>
+              </div>
+              <div class="interesting__text">Новый сезон FIRST® LEGO® League</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="join">
+        <div class="container">
+          <div class="join__inner">
+            <div class="join__info">
+              <div class="join__title title">Присоединяйтесь совершенно бесплатно!</div>
+              <div class="join__paragraph join__paragraph--first">Получите сертификат участника</div>
+              <div class="join__paragraph">И возможность выиграть приз — набор SPIKE™ Prime</div>
+              <a class="join__button button button--white" href="#">Регистрация</a>
+            </div>
+            <div class="join__robot">
+              <picture class="join__picture">
+                <source media="(max-width: 500px)" srcset="assets/images/robot-mobail.png" />
+                <source media="(max-width: 900px)" srcset="assets/images/robot-tab.png" />
+                <img class="join__img" src="assets/images/robot.png" alt="" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="helpful" id="helpful">
+        <div class="container">
+          <div class="title">Кому будет полезно</div>
+          <div class="helpful__block">
+            <div class="helpful__box">
+              <div class="helpful__avatar">
+                <img class="helpful__img" src="assets/images/teatcher.png" alt="" loading="lazy" />
+              </div>
+              <div class="helpful__job">Методисты</div>
+              <div class="helpful__text">Соответсвующего уровня образования</div>
+            </div>
+            <div class="helpful__box">
+              <div class="helpful__avatar">
+                <img class="helpful__img" src="assets/images/teatcher-2.png" alt="" loading="lazy" />
+              </div>
+              <div class="helpful__job">Педагоги</div>
+              <div class="helpful__text">Начального, основного и дополнительного образования, технологии, окружающего мира, информатики и физики</div>
+            </div>
+            <div class="helpful__box">
+              <div class="helpful__avatar">
+                <img class="helpful__img" src="assets/images/teatcher-3.png" alt="" loading="lazy" />
+              </div>
+              <div class="helpful__job">Директора и завучи</div>
+              <div class="helpful__text">По начальному, основному, дополнительному образованию, и учебной деятельности</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="master" id="master">
+        <div class="container">
+          <div class="title title--white">Мастер-классы</div>
+          <div class="master__block">
+            <div class="master__box">
+              <div class="master__picture">
+                <img class="master__img" src="assets/images/master-1.png" alt="" loading="lazy" />
+              </div>
+              <div class="master__inner">
+                <div class="master__title">Начальная школа</div>
+                <div class="master__paragraph">STEAM-образование в начальной школе</div>
+                <div class="master__paragraph">Возможности дистанционного обучения с WeDo 2.0</div>
+                <div class="master__paragraph">Интеграция робототехнических решений LEGO Education в учебный процесс</div>
+              </div>
+            </div>
+            <div class="master__box">
+              <div class="master__picture master__picture--short">
+                <img class="master__img" src="assets/images/master-2.png" alt="" loading="lazy" />
+              </div>
+              <div class="master__inner">
+                <div class="master__title">Основаная школа</div>
+                <div class="master__paragraph">Знакомство с возможностями SPIKE Prime</div>
+                <div class="master__paragraph">Программирование на Python</div>
+                <div class="master__paragraph">Практическое изучение физики и математики</div>
+                <div class="master__paragraph">Возможности дистанционного обучения со SPIKE Prime</div>
+              </div>
+            </div>
+            <div class="master__box">
+              <div class="master__picture">
+                <img class="master__img" src="assets/images/master-3.png" alt="" loading="lazy" />
+              </div>
+              <div class="master__inner">
+                <div class="master__title">Дополнительное образование и соревновательная робототехника</div>
+                <div class="master__paragraph master__paragraph--first">Знакомство с FIRST LEGO League, крупнейшем STEAM соревновании</div>
+                <div class="master__paragraph">Про новый сезон WRO</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="organizers" id="organizers">
+        <div class="container">
+          <div class="title">Организаторы</div>
+          <div class="organizers__block">
+            <picture class="organizers__picture">
+              <source media="(max-width: 500px)" srcset="assets/images/organizers-1-mobail.svg" />
+              <source media="(max-width: 900px)" srcset="assets/images/organizers-1-tab.svg" />
+              <img class="organizers__img" src="assets/images/organizers-1.svg" alt="" loading="lazy" />
+            </picture>
+            <picture class="organizers__picture">
+              <source media="(max-width: 500px)" srcset="assets/images/organizers-2-mobail.svg" />
+              <source media="(max-width: 900px)" srcset="assets/images/organizers-2-tab.svg" />
+              <img class="organizers__img" src="assets/images/organizers-2.svg" alt="" loading="lazy" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="registration">
+        <div class="container">
+          <div class="registration__inner">
+            <div class="registration__content">
+              <div class="registration__title title">Регистрируйся на мероприятие</div>
+              <a class="registration__button button button--white" href="#">Регистрация</a>
+            </div>
+            <div class="registration__media">
+              <picture class="registration__picture">
+                <source media="(max-width: 500px)" srcset="assets/images/registration-mobail.png" />
+                <img class="registration__img" src="assets/images/registration.png" alt="" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__main">
+          <div class="footer__logos">
+            <picture class="footer__picture">
+              <a class="logo-link" href="#"></a>
+              <source media="(max-width: 500px)" srcset="assets/images/footer-logo-mobail.svg" />
+              <source media="(max-width: 900px)" srcset="assets/images/footer-logo-tab.svg" />
+              <img class="footer__img" src="assets/images/footer-logo.svg" alt="" loading="lazy" />
+            </picture>
+            <picture class="logo-lego">
+              <source media="(max-width: 900px)" srcset="assets/images/logo-lego-tab.svg" />
+              <source media="(max-width: 500px)" srcset="assets/images/logo-lego-mobail.svg" />
+              <img class="logo-lego-img" src="assets/images/logo-lego.svg" alt="" loading="lazy" />
+            </picture>
+          </div>
+          <nav class="footer__list">
+            <a class="footer__item" href="#">Сайт ММСО</a>
+            <a class="footer__item" href="#info">Что будет</a>
+            <a class="footer__item" href="#helpful">Для кого</a>
+            <a class="footer__item" href="#master">Мастер-классы</a>
+            <a class="footer__item" href="#organizers">Организаторы</a>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__info">
+            <div class="footer__phone">
+              <div class="footer__text">Телефон горячей линии</div>
+              <a class="footer__number" href="tel:+79653852821">+7 (965) 385-28-21</a>
+            </div>
+            <div class="footer__mail">info@mmco-expo.ru</div>
+          </div>
+          <div class="footer__cop">Designed with love by ❤ ️MateÇa</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>
