@@ -224,3 +224,34 @@ body {
         }
     }
 }
+.slide-button {
+    transition: 0.3s;
+    height: 48px;
+    line-height: 48px;
+    display: block;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    flex: 0 0 calc(50% - 4px);
+    @media (max-width: 500px) {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    &:last-child {
+        @media (max-width: 500px) {
+            margin-bottom: 0;
+        }
+    }
+    &:hover {
+        background-color: $mainColor;
+        color: #fff;
+    }
+    &--next {
+        background-color: var(--bg-color);
+    }
+    &--disable {
+        opacity: 0.6;
+        cursor: auto;
+        pointer-events: none;
+    }
+}

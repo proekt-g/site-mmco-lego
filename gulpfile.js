@@ -32,12 +32,12 @@ gulp.task("scss", function () {
         .pipe(gulp.dest("src/assets/css"))
         .pipe(browserSync.reload({ stream: true }))
 })
-// gulp.task("js-libs", function () {
-//     return gulp
-//         .src(["node_modules/swiper/swiper-bundle.min.js"])
-//         .pipe(concat("_libs.js"))
-//         .pipe(gulp.dest("src/assets/js"));
-// });
+gulp.task("js-libs", function () {
+    return gulp
+        .src(["node_modules/swiper/swiper-bundle.min.js"])
+        .pipe(concat("_libs.js"))
+        .pipe(gulp.dest("src/assets/js"))
+})
 gulp.task("js-optimization", function () {
     return gulp
         .src("src/assets/js/main.js")
@@ -110,7 +110,7 @@ gulp.task(
         "browser-sync",
         "html",
         "scss",
-        // "js-libs",
+        "js-libs",
         "js-optimization",
         "js",
         "watch"

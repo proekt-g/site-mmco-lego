@@ -3,6 +3,7 @@
 @import "vars";
 @import "global";
 @import "animation";
+@import "swiper";
 @import "header";
 @import "footer";
 .about {
@@ -696,3 +697,232 @@
         }
     }
 }
+// Tests
+.test {
+    background-color: var(--site-color);
+    padding: 0 0 40px;
+    &__container {
+        position: relative;
+    }
+    &__back {
+        position: absolute;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        top: 40px;
+        @media (max-width: 900px) {
+            position: static;
+            padding-top: 20px;
+            display: block;
+        }
+        &:hover {
+            color: var(--submain-color);
+        }
+    }
+    &__inner {
+        overflow: hidden;
+        width: 600px;
+        margin: 0 auto;
+        padding: 48px;
+        @media (max-width: 700px) {
+            width: auto;
+            padding: 48px 0 0;
+        }
+    }
+    &__swiper-container {
+        max-width: 552px;
+        overflow: visible;
+        @media (max-width: 700px) {
+            width: auto;
+        }
+        // padding: 48px;
+    }
+    &__slide {
+        background: #ffffff;
+        border-radius: 3px;
+        padding: 32px;
+        width: 552px;
+        @media (max-width: 700px) {
+            width: auto;
+        }
+        @media (max-width: 500px) {
+            padding: 16px;
+        }
+        &-finish-picture-img {
+            width: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        &-img {
+            margin: -80px auto 0;
+            display: block;
+            max-width: 100%;
+            width: auto;
+            @media (max-width: 500px) {
+                margin: -54px auto 0;
+            }
+        }
+        &-title {
+            margin-top: 16px;
+            font-size: 32px;
+            line-height: 110%;
+            text-align: center;
+            font-weight: bold;
+            @media (max-width: 500px) {
+                margin-top: 8px;
+                font-size: 24px;
+            }
+            &--finish {
+                text-align: left;
+            }
+        }
+        &-text {
+            margin: 16px 0 40px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &-button {
+            width: 100%;
+            display: inline-block;
+            background-color: var(--bg-color);
+            &--finish {
+                line-height: 48px;
+                height: 48px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 14px;
+                border-radius: 3px;
+                &:hover {
+                    background-color: $mainColor;
+                    color: #fff;
+                }
+            }
+        }
+        &-pagination {
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 14px;
+            @media (max-width: 500px) {
+                margin-bottom: 8px;
+            }
+        }
+        &-question {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 24px;
+            @media (max-width: 500px) {
+                font-size: 18px;
+                line-height: 110%;
+                margin-bottom: 16px;
+            }
+        }
+        &-answer {
+            background-color: var(--site-color);
+            padding: 14px;
+            width: 100%;
+            border-radius: 3px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            cursor: pointer;
+            flex-wrap: wrap;
+            @media (max-width: 500px) {
+                font-size: 13px;
+                line-height: 16px;
+            }
+            &-text {
+                flex: 0 1 calc(100% - 34px);
+            }
+        }
+        &-input {
+            --active: #275efe;
+            --active-inner: #fff;
+            --focus: 2px rgba(39, 94, 254, 0.3);
+            --border: #bbc1e1;
+            --border-hover: #275efe;
+            --background: #fff;
+            --disabled: #f6f8ff;
+            --disabled-inner: #e1e6f9;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            height: 24px;
+            outline: none;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            margin: 0 10px 0 0;
+            cursor: pointer;
+            border: 1px solid #000;
+            background: var(--site-color);
+            transition: 0.3s;
+            flex: 0 0 24px;
+            @media (max-width: 500px) {
+                height: 16px;
+                flex: 0 0 16px;
+            }
+            &:after {
+                content: url(../images/check.svg);
+                display: block;
+                left: 0;
+                top: 0;
+                position: absolute;
+                transition: 0.3s;
+                opacity: 1;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+            &:checked {
+                background-color: #0090f5;
+                border: 1px solid #0090f5;
+            }
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:not(.switch) {
+                &:after {
+                    opacity: var(--o, 0);
+                }
+                &:checked {
+                    --o: 1;
+                }
+            }
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            border-radius: 50%;
+            &:checked {
+                --s: 0.5;
+            }
+        }
+        &-textarea {
+            flex: 0 1 100%;
+            margin: 8px 0 0 34px !important;
+            display: block;
+            border: 1px solid #000000;
+            border-radius: 3px;
+            padding: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            background-color: var(--site-color);
+        }
+        &-buttons {
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 500px) {
+                margin-top: 16px;
+                display: block;
+            }
+        }
+    }
+}
+// /Tests
